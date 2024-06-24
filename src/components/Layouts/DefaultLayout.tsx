@@ -23,11 +23,6 @@ export default function DefaultLayout({
     }
   }, [loginToken])
 
-  useEffect(() => {
-    if ((pathname.indexOf("signin") || pathname.indexOf("signup")) && loginToken) {
-      router.push("/")
-    }
-  }, [""])
 
   return (
     <>

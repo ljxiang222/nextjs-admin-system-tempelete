@@ -18,10 +18,7 @@ export default function Home() {
   return (
     <>
       <DefaultLayout>
-        {
-          loginToken ?
-            <ECommerce /> : <SignIn />
-        }
+        <ECommerce />
       </DefaultLayout>
     </>
   );
